@@ -14,7 +14,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import { useAuth } from '../../hooks/AuthContext';
 import { useToast } from '../../hooks/ToastContext';
 
-interface SignInCredentials {
+interface ISignInCredentials {
   email: string;
   password: string;
 }
@@ -28,7 +28,7 @@ const SignIn: React.FC = () => {
   const history = useHistory();
 
   const handleSubmit = useCallback(
-    async (data: SignInCredentials) => {
+    async (data: ISignInCredentials) => {
       try {
         formRef.current?.setErrors({});
 

@@ -7,12 +7,12 @@ import {
 
 import { useAuth } from '../hooks/AuthContext';
 
-interface RouteProps extends ReactRouteProps {
+interface IRouteProps extends ReactRouteProps {
   isPrivate?: boolean;
   component: React.ComponentType;
 }
 
-const Route: React.FC<RouteProps> = ({
+const Route: React.FC<IRouteProps> = ({
   isPrivate = false,
   component: Component,
   ...rest
