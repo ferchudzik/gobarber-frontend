@@ -6,12 +6,12 @@ import {
   FiXCircle,
 } from 'react-icons/fi';
 
-import { ToastMessage, useToast } from '../../../hooks/ToastContext';
+import { IToastMessage, useToast } from '../../../hooks/ToastContext';
 
 import { Container } from './styles';
 
 interface IToastProps {
-  message: ToastMessage;
+  message: IToastMessage;
   style: object;
 }
 
